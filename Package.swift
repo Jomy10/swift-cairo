@@ -9,6 +9,10 @@ let package = Package(
         .library(
             name: "Cairo",
             targets: ["Cairo"]),
+        .library(
+            name: "SCCCairo",
+            targets: ["SCCCairo"]
+        )
     ],
     targets: [
         .target(
