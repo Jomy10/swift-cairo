@@ -21,7 +21,7 @@ public class Surface {
         cairo_surface_destroy(internalPointer)
     }
     
-    internal init(_ internalPointer: OpaquePointer) throws {
+    public init(_ internalPointer: OpaquePointer) throws {
         
         try cairo_surface_create_check_status(internalPointer)
         
