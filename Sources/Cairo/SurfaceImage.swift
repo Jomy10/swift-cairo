@@ -28,6 +28,10 @@ public extension Surface {
             
             try super.init(internalPointer)
         }
+
+        public init(internalPointer: OpaquePointer) throws {
+            try super.init(internalPointer)
+        }
         
         /// Creates an image surface for the provided pixel data.
         public init(mutableBytes bytes: UnsafeMutablePointer<UInt8>,
